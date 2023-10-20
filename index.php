@@ -18,16 +18,16 @@ use chillerlan\QRCode\{QRCode, QROptions};
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<div class="container w-50">
-    <h1 class="mt-5"><img src="/assets/images/qr-code-scan.svg" style="width:2vw" class="me-2">qrko.skerik.me</h1>
-    <p>QR Code Generator - absolutely free.</p>
+<div class="container w-lg-50 w-75">
+    <h1 class="mt-5"><img src="/assets/images/qr-code-scan.svg" style="width:30px" class="me-2">qrko.skerik.me</h1>
+    <p class="lead">QR Code Generator - absolutely free.</p>
     <form method="post">
         <label for="url">Enter URL...</label>
         <input id="url" type="text" name="url" class="form-control my-3 form-control-lg" placeholder="URL" required>
         <input type="submit" class="btn btn-outline-dark btn-lg" name="generate" value="Generate QR">
     </form>
 
-    <div class="col-12 text-center">
+    <div class="col-12 text-center my-5">
     <?php
     // if form is submitted
     if (isset($_POST['generate'])) {
@@ -41,7 +41,10 @@ use chillerlan\QRCode\{QRCode, QROptions};
 
     ?>
     </div>
+    <a href="https://github.com/filasik/qrko.skerik.me" class="text-muted pt-5" target="_blank">Github repository</a>
+    | <a href="https://skerik.me" class="text-muted pt-5" target="_blank">skerik.me</a>
 </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
