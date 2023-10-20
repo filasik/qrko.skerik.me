@@ -19,7 +19,7 @@ use chillerlan\QRCode\{QRCode, QROptions};
 </head>
 <body>
 <div class="container w-50">
-    <h1 class="mt-5">qrko.skerik.me</h1>
+    <h1 class="mt-5"><img src="/assets/images/qr-code-scan.svg" style="width:2vw" class="me-2">qrko.skerik.me</h1>
     <p>QR Code Generator - absolutely free.</p>
     <form method="post">
         <label for="url">Enter URL...</label>
