@@ -1,0 +1,6 @@
+{
+    "require": {
+        "chillerlan/php-qrcode": "^4.3",
+        "tracy/tracy": "^2.10"
+    }
+}
